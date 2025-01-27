@@ -6,6 +6,98 @@
     <title>Document</title>
 </head>
 <body>
+    <p>
+        <span id="mySpan">Hello, World!</span>
+        <button onclick="changeText()">Change Text</button>
+    </p>
+    <div class="class">
+        <p>This is a paragraph within a div element.</p>
+        <button onclick="changeDivText()">Change Div Text</button>
+        <button onclick="addDivClass()">Add Class</button>
+        <button onclick="removeDivClass()">Remove Class</button>
+        <button onclick="toggleDivClass()">Toggle Class</button>
+        <button onclick="changeDivStyle()">Change Div Style</button>
+        <button onclick="changeDivVisibility()">Change Div Visibility</button>
+        <button onclick="changeDivPosition()">Change Div Position</button>
+        <button onclick="changeDivWidth()">Change Div Width</button>
+        <button onclick="changeDivHeight()">Change Div Height</button>
+        <button onclick="changeDivBackground()">Change Div Background</button>
+        <button onclick="changeDivBorder()">Change Div Border</button>
+    </div>
     
+    <script>
+        // Function to change the text of the span element
+        function changeText() {
+            var span = document.getElementById("mySpan");
+            span.textContent = "Goodbye, World!";
+        }
+        
+        // Function to change the text of the div element
+        function changeDivText() {
+            var div = document.querySelector(".class");
+            div.textContent = "This is a new paragraph.";
+        }
+        
+        // Function to add a class to the div element
+        function addDivClass() {
+            var div = document.querySelector(".class");
+            div.classList.add("new-class");
+        }
+        
+        // Function to remove a class from the div element
+        function removeDivClass() {
+            var div = document.querySelector(".class");
+            div.classList.remove("new-class");
+        }
+        
+        // Function to toggle a class on the div element
+        function toggleDivClass() {
+            var div = document.querySelector(".class");
+            div.classList.toggle("new-class");
+        }
+        
+        // Function to change the style of the div element
+        function changeDivStyle() {
+            var div = document.querySelector(".class");
+            div.style.color = "red";
+            div.style.fontSize = "24px";
+        }
+        
+        // Function to change the visibility of the div element
+        function changeDivVisibility() {
+            var div = document.querySelector(".class");
+            div.style.display = div.style.display === "none"? "block" : "none";
+        }
+        
+        // Function to change the position of the div element
+        function changeDivPosition() {
+            var div = document.querySelector(".class");
+            div.style.position = div.style.position === "absolute"? "static" : "absolute";
+        }
+        
+        // Function to change the width of the div element
+        function changeDivWidth() {
+            var div = document.querySelector(".class");
+            div.style.width = "200px";
+        }
+        
+        // Function to change the height of the div element
+        function changeDivHeight() {
+            var div = document.querySelector(".class");
+            div.style.height = "150px";
+        }
+        
+        // Function to change the background color of the div element
+        function changeDivBackground() {
+            var div = document.querySelector(".class");
+            div.style.backgroundColor = "yellow";
+        }
+        
+        // Function to change the border of the div element
+        function changeDivBorder() {
+            var div = document.querySelector(".class");
+            div.style.border = "1px solid black";
+        }
+    </script>
 </body>
 </html>
